@@ -1,0 +1,8 @@
+node{
+    stage('SCM Checkout'){
+    git'https://github.com/Komalsharma2424/core-java/new/master'
+    }
+    stage('compile-package){
+     sh' mvn package'
+     }
+   }
